@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://github.com/<YOUR_REPO_URL>.git'
+    repoURL: 'https://github.com/ay65535/k3s.git'
     targetRevision: HEAD
     chart: kubernetes-dashboard
     helm:

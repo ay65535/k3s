@@ -19,7 +19,7 @@ helm upgrade --install argo-workflows argo/argo-workflows \
   -n argo-workflows -f values/argo-workflows.yaml
 
 echo "Waiting for Argo CD server to be ready..."
-kubectl wait --for=condition=available deployment/argocd-server \
+kubectl wait --for=condition=available deployment/argo-cd-argocd-server \
   -n argocd --timeout=120s
 
 echo "Applying Argo CD Applications (GitOps)..."
