@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Workflow
+metadata:
+  generateName: ci-pipeline-
+spec:
+  entrypoint: build-and-deploy
+  templates:
+  - name: build-and-deploy
+    steps:
+    - - name: greeting
+        template: greeting
+  - name: greeting
+    container:
+      image: alpine:latest
+      command: [echo]
+      args: ["Running CI/CD Pipeline"]

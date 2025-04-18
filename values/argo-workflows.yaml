@@ -1,0 +1,11 @@
+controller:
+  replicaCount: 1
+  serviceAccount:
+    create: false
+    name: argo-workflows-sa
+workflow:
+  metrics:
+    enabled: false
+  ttlStrategy:
+    secondsAfterCompletion: 86400
+  ttlSecondsAfterWorkflowFinished: 86400

@@ -1,0 +1,11 @@
+replicaCount: 1
+service:
+  type: ClusterIP
+  port: 443
+rbac:
+  create: false
+serviceAccount:
+  create: false
+  name: dashboard-sa
+ingress:
+  enabled: false

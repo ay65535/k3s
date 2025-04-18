@@ -1,0 +1,7 @@
+server:
+  service:
+    type: ClusterIP
+    port: 80
+configs:
+  cm:
+    application.instanceLabelKey: argocd.argoproj.io/instance
