@@ -1,7 +1,8 @@
 server:
   service:
-    type: ClusterIP
+    type: NodePort
     port: 80
+    nodePort: 30080
 configs:
   cm:
     application.instanceLabelKey: argocd.argoproj.io/instance

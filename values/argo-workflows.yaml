@@ -3,6 +3,10 @@ controller:
   serviceAccount:
     create: false
     name: argo-workflows-sa
+  service:
+    type: NodePort
+    port: 2746
+    nodePort: 30046
 workflow:
   metrics:
     enabled: false
